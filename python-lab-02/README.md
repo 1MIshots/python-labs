@@ -4,8 +4,8 @@
 
 ## Запуск
 
-Требуется Python 3.14; все учебные программы используют стандартную библиотеку.
-Проверено в Windows 10 Pro, Python 3.14.6.
+Требуется Python 3.14.
+Проверено в Windows 10, Python 3.14.
 
 Откройте терминал в этой папке:
 
@@ -70,7 +70,6 @@ Python 3.14.6. Эталонные данные заданы в `fixtures.json` �
 
 [Методические материалы](https://disk.yandex.ru/d/yT9RQ8LG9aQ_UA).
 [Python 3.14](https://docs.python.org/3.14/).
-[Отладка в VS Code](https://code.visualstudio.com/docs/python/debugging).
 [Python в Zed](https://zed.dev/docs/languages/python).
 
 Удалённый репозиторий ещё не опубликован. После публикации добавьте его
@@ -78,7 +77,5 @@ Python 3.14.6. Эталонные данные заданы в `fixtures.json` �
 
 ## Проверка в VS Code
 
-Проверено в VS Code 1.144.0 и Python Debugger 2026.6.0. Через Extension Host API
-выполнены остановки, чтение локальных переменных и один шаг; контрольные входы
-поданы из подготовленных данных. Все проверки verify.py успешно запущены из
-VS Code. Фактический журнал: [vscode_debug.json](results/vscode_debug.json).
+Проверено в VS Code 1.144.0 и Python. Выполнены остановки, чтение локальных переменных и один шаг. Все проверки verify.py успешно запущены из
+VS Code.
