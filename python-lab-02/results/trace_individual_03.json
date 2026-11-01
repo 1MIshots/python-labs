@@ -1,0 +1,274 @@
+{
+  "file": "individual_03.py",
+  "input": "6",
+  "output": "Делители: 1 2 3 6\n",
+  "events": [
+    {
+      "line": 1,
+      "source": "import sys",
+      "state": {}
+    },
+    {
+      "line": 3,
+      "source": "def main():",
+      "state": {}
+    },
+    {
+      "line": 15,
+      "source": "if __name__ == '__main__':",
+      "state": {}
+    },
+    {
+      "line": 16,
+      "source": "sys.exit(main())",
+      "state": {}
+    },
+    {
+      "line": 4,
+      "source": "n = int(input())",
+      "state": {}
+    },
+    {
+      "line": 5,
+      "source": "if not 1 <= n <= 100000:",
+      "state": {
+        "n": 6
+      }
+    },
+    {
+      "line": 8,
+      "source": "divisors = []",
+      "state": {
+        "n": 6
+      }
+    },
+    {
+      "line": 9,
+      "source": "for k in range(1, n + 1):",
+      "state": {
+        "n": 6,
+        "divisors": []
+      }
+    },
+    {
+      "line": 10,
+      "source": "if n % k == 0:",
+      "state": {
+        "n": 6,
+        "k": 1,
+        "divisors": []
+      }
+    },
+    {
+      "line": 11,
+      "source": "divisors.append(k)",
+      "state": {
+        "n": 6,
+        "k": 1,
+        "divisors": []
+      }
+    },
+    {
+      "line": 9,
+      "source": "for k in range(1, n + 1):",
+      "state": {
+        "n": 6,
+        "k": 1,
+        "divisors": [
+          1
+        ]
+      }
+    },
+    {
+      "line": 10,
+      "source": "if n % k == 0:",
+      "state": {
+        "n": 6,
+        "k": 2,
+        "divisors": [
+          1
+        ]
+      }
+    },
+    {
+      "line": 11,
+      "source": "divisors.append(k)",
+      "state": {
+        "n": 6,
+        "k": 2,
+        "divisors": [
+          1
+        ]
+      }
+    },
+    {
+      "line": 9,
+      "source": "for k in range(1, n + 1):",
+      "state": {
+        "n": 6,
+        "k": 2,
+        "divisors": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "line": 10,
+      "source": "if n % k == 0:",
+      "state": {
+        "n": 6,
+        "k": 3,
+        "divisors": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "line": 11,
+      "source": "divisors.append(k)",
+      "state": {
+        "n": 6,
+        "k": 3,
+        "divisors": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "line": 9,
+      "source": "for k in range(1, n + 1):",
+      "state": {
+        "n": 6,
+        "k": 3,
+        "divisors": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "line": 10,
+      "source": "if n % k == 0:",
+      "state": {
+        "n": 6,
+        "k": 4,
+        "divisors": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "line": 9,
+      "source": "for k in range(1, n + 1):",
+      "state": {
+        "n": 6,
+        "k": 4,
+        "divisors": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "line": 10,
+      "source": "if n % k == 0:",
+      "state": {
+        "n": 6,
+        "k": 5,
+        "divisors": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "line": 9,
+      "source": "for k in range(1, n + 1):",
+      "state": {
+        "n": 6,
+        "k": 5,
+        "divisors": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "line": 10,
+      "source": "if n % k == 0:",
+      "state": {
+        "n": 6,
+        "k": 6,
+        "divisors": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "line": 11,
+      "source": "divisors.append(k)",
+      "state": {
+        "n": 6,
+        "k": 6,
+        "divisors": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "line": 9,
+      "source": "for k in range(1, n + 1):",
+      "state": {
+        "n": 6,
+        "k": 6,
+        "divisors": [
+          1,
+          2,
+          3,
+          6
+        ]
+      }
+    },
+    {
+      "line": 12,
+      "source": "print('Делители:', *divisors)",
+      "state": {
+        "n": 6,
+        "k": 6,
+        "divisors": [
+          1,
+          2,
+          3,
+          6
+        ]
+      }
+    },
+    {
+      "line": 13,
+      "source": "return 0",
+      "state": {
+        "n": 6,
+        "k": 6,
+        "divisors": [
+          1,
+          2,
+          3,
+          6
+        ]
+      }
+    }
+  ]
+}

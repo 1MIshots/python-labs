@@ -1,0 +1,99 @@
+{
+  "vscode": "1.144.0",
+  "debuggerVersion": "2026.6.0",
+  "method": "VS Code Extension Host API and Python Debugger, DAP breakpoints and next",
+  "passed": true,
+  "sessions": [
+    {
+      "lab": 1,
+      "file": "individual_02.py",
+      "line": 5,
+      "input": "100999\n",
+      "expressions": [
+        "n",
+        "first_sum",
+        "last_sum",
+        "difference"
+      ],
+      "before": {
+        "first_sum": "1",
+        "last_sum": "27"
+      },
+      "after": {
+        "difference": "26"
+      },
+      "outputContains": [
+        "Модуль разности сумм: 26"
+      ],
+      "stops": [
+        {
+          "label": "before",
+          "reason": "breakpoint",
+          "frame": {
+            "id": 2,
+            "name": "<module>",
+            "line": 5,
+            "column": 1,
+            "source": {
+              "path": "individual_02.py",
+              "sourceReference": 0
+            }
+          },
+          "variables": {
+            "special variables": "",
+            "first_sum": "1",
+            "last_sum": "27",
+            "n": "100999"
+          },
+          "values": {
+            "n": "100999",
+            "first_sum": "1",
+            "last_sum": "27",
+            "difference": "unavailable"
+          }
+        },
+        {
+          "label": "after next",
+          "reason": "step",
+          "frame": {
+            "id": 2,
+            "name": "<module>",
+            "line": 7,
+            "column": 1,
+            "source": {
+              "path": "individual_02.py",
+              "sourceReference": 0
+            }
+          },
+          "variables": {
+            "special variables": "",
+            "difference": "26",
+            "first_sum": "1",
+            "last_sum": "27",
+            "n": "100999"
+          },
+          "values": {
+            "n": "100999",
+            "first_sum": "1",
+            "last_sum": "27",
+            "difference": "26"
+          }
+        }
+      ],
+      "output": "ptvsddebugpyPython: 3.14.6\nInterpreter: c:\\Users\\mansu\\Documents\\Codex\\2026-11-01\\https-disk-yandex-ru-d-yt9rq8lg9aq-3\\outputs\\Python_ЛР1-5_Вариант_13\\python-lab-01\\.venv\\Scripts\\python.exe\nМодуль разности сумм: 26\n",
+      "passed": true
+    },
+    {
+      "lab": 1,
+      "file": "verify.py",
+      "input": "",
+      "noBreakpoint": true,
+      "outputContains": [
+        "19 из 19"
+      ],
+      "stops": [],
+      "output": "ptvsddebugpyPython: 3.14.6\nInterpreter: c:\\Users\\mansu\\Documents\\Codex\\2026-11-01\\https-disk-yandex-ru-d-yt9rq8lg9aq-3\\outputs\\Python_ЛР1-5_Вариант_13\\python-lab-01\\.venv\\Scripts\\python.exe\nУспешно: 19 из 19\n",
+      "passed": true
+    }
+  ]
+}

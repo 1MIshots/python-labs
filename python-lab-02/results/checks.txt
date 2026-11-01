@@ -1,0 +1,680 @@
+Python 3.14.6; 85/85
+branch.py | 0
+INPUT: '0\n'
+EXPECTED: 'y = 1.000000\n'
+STDOUT: 'y = 1.000000\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+branch.py | -2
+INPUT: '-2\n'
+EXPECTED: 'y = 7.583853\n'
+STDOUT: 'y = 7.583853\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+branch.py | 2
+INPUT: '2\n'
+EXPECTED: 'y = 3.000000\n'
+STDOUT: 'y = 3.000000\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+branch.py | 5
+INPUT: '5\n'
+EXPECTED: 'y = -25.544021\n'
+STDOUT: 'y = -25.544021\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+branch.py | -1e-06
+INPUT: '-1e-06\n'
+EXPECTED: 'y = 1.000000\n'
+STDOUT: 'y = 1.000000\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+branch.py | 1e-06
+INPUT: '1e-06\n'
+EXPECTED: 'y = 1.000001\n'
+STDOUT: 'y = 1.000001\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+branch.py | 4.999999
+INPUT: '4.999999\n'
+EXPECTED: 'y = 5.999999\n'
+STDOUT: 'y = 5.999999\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+branch.py | 5.000001
+INPUT: '5.000001\n'
+EXPECTED: 'y = -25.544033\n'
+STDOUT: 'y = -25.544033\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+branch.py | -100
+INPUT: '-100\n'
+EXPECTED: 'y = 20000.862319\n'
+STDOUT: 'y = 20000.862319\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+branch.py | 100
+INPUT: '100\n'
+EXPECTED: 'y = -10000.873297\n'
+STDOUT: 'y = -10000.873297\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+branch.py | 101
+INPUT: '101\n'
+EXPECTED: 'Ошибка: x вне [-100, 100]\n'
+STDOUT: ''
+STDERR: 'Ошибка: x вне [-100, 100]\n'
+EXIT: 1
+PASS
+
+season_if.py | 0
+INPUT: '0\n'
+EXPECTED: 'Ошибка: номер месяца\n'
+STDOUT: 'Ошибка: номер месяца\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_match.py | 0
+INPUT: '0\n'
+EXPECTED: 'Ошибка: номер месяца\n'
+STDOUT: 'Ошибка: номер месяца\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_if.py | 1
+INPUT: '1\n'
+EXPECTED: 'Зима\n'
+STDOUT: 'Зима\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_match.py | 1
+INPUT: '1\n'
+EXPECTED: 'Зима\n'
+STDOUT: 'Зима\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_if.py | 2
+INPUT: '2\n'
+EXPECTED: 'Зима\n'
+STDOUT: 'Зима\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_match.py | 2
+INPUT: '2\n'
+EXPECTED: 'Зима\n'
+STDOUT: 'Зима\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_if.py | 3
+INPUT: '3\n'
+EXPECTED: 'Весна\n'
+STDOUT: 'Весна\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_match.py | 3
+INPUT: '3\n'
+EXPECTED: 'Весна\n'
+STDOUT: 'Весна\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_if.py | 4
+INPUT: '4\n'
+EXPECTED: 'Весна\n'
+STDOUT: 'Весна\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_match.py | 4
+INPUT: '4\n'
+EXPECTED: 'Весна\n'
+STDOUT: 'Весна\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_if.py | 5
+INPUT: '5\n'
+EXPECTED: 'Весна\n'
+STDOUT: 'Весна\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_match.py | 5
+INPUT: '5\n'
+EXPECTED: 'Весна\n'
+STDOUT: 'Весна\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_if.py | 6
+INPUT: '6\n'
+EXPECTED: 'Лето\n'
+STDOUT: 'Лето\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_match.py | 6
+INPUT: '6\n'
+EXPECTED: 'Лето\n'
+STDOUT: 'Лето\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_if.py | 7
+INPUT: '7\n'
+EXPECTED: 'Лето\n'
+STDOUT: 'Лето\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_match.py | 7
+INPUT: '7\n'
+EXPECTED: 'Лето\n'
+STDOUT: 'Лето\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_if.py | 8
+INPUT: '8\n'
+EXPECTED: 'Лето\n'
+STDOUT: 'Лето\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_match.py | 8
+INPUT: '8\n'
+EXPECTED: 'Лето\n'
+STDOUT: 'Лето\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_if.py | 9
+INPUT: '9\n'
+EXPECTED: 'Осень\n'
+STDOUT: 'Осень\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_match.py | 9
+INPUT: '9\n'
+EXPECTED: 'Осень\n'
+STDOUT: 'Осень\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_if.py | 10
+INPUT: '10\n'
+EXPECTED: 'Осень\n'
+STDOUT: 'Осень\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_match.py | 10
+INPUT: '10\n'
+EXPECTED: 'Осень\n'
+STDOUT: 'Осень\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_if.py | 11
+INPUT: '11\n'
+EXPECTED: 'Осень\n'
+STDOUT: 'Осень\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_match.py | 11
+INPUT: '11\n'
+EXPECTED: 'Осень\n'
+STDOUT: 'Осень\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_if.py | 12
+INPUT: '12\n'
+EXPECTED: 'Зима\n'
+STDOUT: 'Зима\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_match.py | 12
+INPUT: '12\n'
+EXPECTED: 'Зима\n'
+STDOUT: 'Зима\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_if.py | 13
+INPUT: '13\n'
+EXPECTED: 'Ошибка: номер месяца\n'
+STDOUT: 'Ошибка: номер месяца\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+season_match.py | 13
+INPUT: '13\n'
+EXPECTED: 'Ошибка: номер месяца\n'
+STDOUT: 'Ошибка: номер месяца\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+finite_sum.py | 0; 1
+INPUT: '0\n1\n'
+EXPECTED: 'S = 0.0000000000\n'
+STDOUT: 'S = 0.0000000000\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+finite_sum.py | 1; 1
+INPUT: '1\n1\n'
+EXPECTED: 'S = 0.0000000000\n'
+STDOUT: 'S = 0.0000000000\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+finite_sum.py | 2; 1
+INPUT: '2\n1\n'
+EXPECTED: 'S = 0.1732867951\n'
+STDOUT: 'S = 0.1732867951\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+finite_sum.py | 3; 2
+INPUT: '3\n2\n'
+EXPECTED: 'S = 1.2388051563\n'
+STDOUT: 'S = 1.2388051563\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+finite_sum.py | 1; 0
+INPUT: '1\n0\n'
+EXPECTED: 'Ошибка: недопустимые n или x\n'
+STDOUT: ''
+STDERR: 'Ошибка: недопустимые n или x\n'
+EXIT: 1
+PASS
+
+positive_sum.py | 3; -2; 5; 0
+INPUT: '3\n-2\n5\n0\n'
+EXPECTED: 'Сумма: 8\n'
+STDOUT: 'Сумма: 8\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+positive_sum.py | 0
+INPUT: '0\n'
+EXPECTED: 'Сумма: 0\n'
+STDOUT: 'Сумма: 0\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+positive_sum.py | -9; -1; 0
+INPUT: '-9\n-1\n0\n'
+EXPECTED: 'Сумма: 0\n'
+STDOUT: 'Сумма: 0\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+positive_sum.py | 1; 2; 3; 0
+INPUT: '1\n2\n3\n0\n'
+EXPECTED: 'Сумма: 6\n'
+STDOUT: 'Сумма: 6\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+sqrt_iteration.py | 0
+INPUT: '0\n'
+EXPECTED: ['Корень: 0.000000000000']
+STDOUT: 'Корень: 0.000000000000\nИтераций: 0\nРасхождение: 0.000e+00\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+sqrt_iteration.py | 1
+INPUT: '1\n'
+EXPECTED: ['Корень: 1.000000000000']
+STDOUT: 'Корень: 1.000000000000\nИтераций: 1\nРасхождение: 0.000e+00\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+sqrt_iteration.py | 2
+INPUT: '2\n'
+EXPECTED: ['Корень: 1.414213562373']
+STDOUT: 'Корень: 1.414213562373\nИтераций: 5\nРасхождение: 2.220e-16\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+sqrt_iteration.py | 0.0001
+INPUT: '0.0001\n'
+EXPECTED: ['Корень: 0.010000000000']
+STDOUT: 'Корень: 0.010000000000\nИтераций: 11\nРасхождение: 0.000e+00\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+sqrt_iteration.py | 1000000.0
+INPUT: '1000000.0\n'
+EXPECTED: ['Корень: 1000.000000000000']
+STDOUT: 'Корень: 1000.000000000000\nИтераций: 15\nРасхождение: 0.000e+00\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+sqrt_iteration.py | -1
+INPUT: '-1\n'
+EXPECTED: 'Ошибка: a вне [0, 1000000]\n'
+STDOUT: ''
+STDERR: 'Ошибка: a вне [0, 1000000]\n'
+EXIT: 1
+PASS
+
+exponential_integral.py | 0.1
+INPUT: '0.1\n'
+EXPECTED: ['Ei = -1.6228128140']
+STDOUT: 'Ei = -1.6228128140\nЧленов: 6\nОценка остатка: 7.716e-11\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+exponential_integral.py | 0.5
+INPUT: '0.5\n'
+EXPECTED: ['Ei = 0.4542199049']
+STDOUT: 'Ei = 0.4542199049\nЧленов: 10\nОценка остатка: 8.970e-12\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+exponential_integral.py | 1
+INPUT: '1\n'
+EXPECTED: ['Ei = 1.8951178164']
+STDOUT: 'Ei = 1.8951178163\nЧленов: 12\nОценка остатка: 5.799e-11\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+exponential_integral.py | 0
+INPUT: '0\n'
+EXPECTED: 'Ошибка: x вне [0.1, 1]\n'
+STDOUT: ''
+STDERR: 'Ошибка: x вне [0.1, 1]\n'
+EXIT: 1
+PASS
+
+individual_01.py | 0
+INPUT: '0\n'
+EXPECTED: 'Оплата: 0.00 руб.\n'
+STDOUT: 'Оплата: 0.00 руб.\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_01.py | 50
+INPUT: '50\n'
+EXPECTED: 'Оплата: 15.00 руб.\n'
+STDOUT: 'Оплата: 15.00 руб.\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_01.py | 50.001
+INPUT: '50.001\n'
+EXPECTED: 'Оплата: 25.00 руб.\n'
+STDOUT: 'Оплата: 25.00 руб.\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_01.py | 75
+INPUT: '75\n'
+EXPECTED: 'Оплата: 37.50 руб.\n'
+STDOUT: 'Оплата: 37.50 руб.\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_01.py | 75.001
+INPUT: '75.001\n'
+EXPECTED: 'Оплата: 48.75 руб.\n'
+STDOUT: 'Оплата: 48.75 руб.\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_01.py | 90
+INPUT: '90\n'
+EXPECTED: 'Оплата: 58.50 руб.\n'
+STDOUT: 'Оплата: 58.50 руб.\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_01.py | 90.001
+INPUT: '90.001\n'
+EXPECTED: 'Оплата: 83.00 руб.\n'
+STDOUT: 'Оплата: 83.00 руб.\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_01.py | 1000
+INPUT: '1000\n'
+EXPECTED: 'Оплата: 720.00 руб.\n'
+STDOUT: 'Оплата: 720.00 руб.\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_01.py | -.1
+INPUT: '-.1\n'
+EXPECTED: 'Ошибка: масса вне [0, 1000]\n'
+STDOUT: ''
+STDERR: 'Ошибка: масса вне [0, 1000]\n'
+EXIT: 1
+PASS
+
+individual_02.py | 12; 3
+INPUT: '12\n3\n'
+EXPECTED: 'Делится\n'
+STDOUT: 'Делится\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_02.py | 13; 3
+INPUT: '13\n3\n'
+EXPECTED: 'Не делится\n'
+STDOUT: 'Не делится\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_02.py | 1; 1
+INPUT: '1\n1\n'
+EXPECTED: 'Делится\n'
+STDOUT: 'Делится\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_02.py | 2; 5
+INPUT: '2\n5\n'
+EXPECTED: 'Не делится\n'
+STDOUT: 'Не делится\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_02.py | 1; 0
+INPUT: '1\n0\n'
+EXPECTED: 'Ошибка: нужны натуральные числа\n'
+STDOUT: ''
+STDERR: 'Ошибка: нужны натуральные числа\n'
+EXIT: 1
+PASS
+
+individual_03.py | 1
+INPUT: '1\n'
+EXPECTED: 'Делители: 1\n'
+STDOUT: 'Делители: 1\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_03.py | 13
+INPUT: '13\n'
+EXPECTED: 'Делители: 1 13\n'
+STDOUT: 'Делители: 1 13\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_03.py | 12
+INPUT: '12\n'
+EXPECTED: 'Делители: 1 2 3 4 6 12\n'
+STDOUT: 'Делители: 1 2 3 4 6 12\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_03.py | 6
+INPUT: '6\n'
+EXPECTED: 'Делители: 1 2 3 6\n'
+STDOUT: 'Делители: 1 2 3 6\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_03.py | 100000
+INPUT: '100000\n'
+EXPECTED: 'Делители: 1 2 4 5 8 10 16 20 25 32 40 50 80 100 125 160 200 250 400 500 625 800 1000 1250 2000 2500 3125 4000 5000 6250 10000 12500 20000 25000 50000 100000\n'
+STDOUT: 'Делители: 1 2 4 5 8 10 16 20 25 32 40 50 80 100 125 160 200 250 400 500 625 800 1000 1250 2000 2500 3125 4000 5000 6250 10000 12500 20000 25000 50000 100000\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_03.py | 0
+INPUT: '0\n'
+EXPECTED: 'Ошибка: n вне [1, 100000]\n'
+STDOUT: ''
+STDERR: 'Ошибка: n вне [1, 100000]\n'
+EXIT: 1
+PASS
+
+individual_04.py | -1
+INPUT: '-1\n'
+EXPECTED: ['sinh = -1.1752011936']
+STDOUT: 'sinh = -1.1752011936\nЧленов: 8\nОценка остатка: 7.647e-13\nПроверка 50 членов: -1.175201193644\nРасхождение: 2.665e-15\nРасхождение с math.sinh: 2.665e-15\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_04.py | -0.5
+INPUT: '-0.5\n'
+EXPECTED: ['sinh = -0.5210953055']
+STDOUT: 'sinh = -0.5210953055\nЧленов: 6\nОценка остатка: 1.223e-11\nПроверка 50 членов: -0.521095305494\nРасхождение: 1.965e-14\nРасхождение с math.sinh: 1.965e-14\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_04.py | 0
+INPUT: '0\n'
+EXPECTED: ['sinh = 0.0000000000']
+STDOUT: 'sinh = 0.0000000000\nЧленов: 1\nОценка остатка: 0.000e+00\nПроверка 50 членов: 0.000000000000\nРасхождение: 0.000e+00\nРасхождение с math.sinh: 0.000e+00\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_04.py | 0.5
+INPUT: '0.5\n'
+EXPECTED: ['sinh = 0.5210953055']
+STDOUT: 'sinh = 0.5210953055\nЧленов: 6\nОценка остатка: 1.223e-11\nПроверка 50 членов: 0.521095305494\nРасхождение: 1.965e-14\nРасхождение с math.sinh: 1.965e-14\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_04.py | 1
+INPUT: '1\n'
+EXPECTED: ['sinh = 1.1752011936']
+STDOUT: 'sinh = 1.1752011936\nЧленов: 8\nОценка остатка: 7.647e-13\nПроверка 50 членов: 1.175201193644\nРасхождение: 2.665e-15\nРасхождение с math.sinh: 2.665e-15\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_04.py | -1.0001
+INPUT: '-1.0001\n'
+EXPECTED: 'Ошибка: x вне [-1, 1]\n'
+STDOUT: ''
+STDERR: 'Ошибка: x вне [-1, 1]\n'
+EXIT: 1
+PASS
+
+individual_04.py | 1.0001
+INPUT: '1.0001\n'
+EXPECTED: 'Ошибка: x вне [-1, 1]\n'
+STDOUT: ''
+STDERR: 'Ошибка: x вне [-1, 1]\n'
+EXIT: 1
+PASS

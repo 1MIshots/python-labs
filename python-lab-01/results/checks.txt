@@ -1,0 +1,21 @@
+Python 3.14.6
+hello.py | '' | OK
+zed_example.py | '3\n25.5' | OK
+user.py | 'Анна\n18\nКазань' | OK
+user.py | 'Иван\n0\nОмск' | OK
+user.py | 'Елена\n120\nТула' | OK
+arithmetic.py | '350' | OK
+arithmetic.py | '346' | OK
+arithmetic.py | 'не знаю' | OK
+numbers.py | '1\n2\n3\n5' | OK
+numbers.py | '-2.5\n1\n2\n1' | OK
+numbers.py | '-3\n3\n1\n1' | OK
+individual_01.py | '10\n14' | OK
+individual_01.py | '0\n120' | OK
+individual_01.py | '17\n20' | OK
+individual_01.py | '20\n20' | OK
+individual_02.py | '123321' | OK
+individual_02.py | '100999' | OK
+individual_02.py | '100000' | OK
+individual_02.py | '999999' | OK
+Успешно: 19 из 19

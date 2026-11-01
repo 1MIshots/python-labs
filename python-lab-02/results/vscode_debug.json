@@ -1,0 +1,187 @@
+{
+  "vscode": "1.144.0",
+  "debuggerVersion": "2026.6.0",
+  "method": "VS Code Extension Host API and Python Debugger, DAP breakpoints and next",
+  "passed": true,
+  "sessions": [
+    {
+      "lab": 2,
+      "file": "individual_03.py",
+      "marker": "if n % k == 0:",
+      "condition": "k == 3",
+      "input": "6\n",
+      "expressions": [
+        "n",
+        "k",
+        "divisors"
+      ],
+      "before": {
+        "k": "3",
+        "divisors": "[1, 2]"
+      },
+      "outputContains": [
+        "Делители: 1 2 3 6"
+      ],
+      "stops": [
+        {
+          "label": "before",
+          "reason": "breakpoint",
+          "frame": {
+            "id": 2,
+            "name": "main",
+            "line": 10,
+            "column": 1,
+            "source": {
+              "path": "individual_03.py",
+              "sourceReference": 0
+            }
+          },
+          "variables": {
+            "divisors": "[1, 2]",
+            "k": "3",
+            "n": "6",
+            "special variables": "",
+            "function variables": "",
+            "sys": "<module 'sys' (built-in)>"
+          },
+          "values": {
+            "n": "6",
+            "k": "3",
+            "divisors": "[1, 2]"
+          }
+        },
+        {
+          "label": "after next",
+          "reason": "step",
+          "frame": {
+            "id": 2,
+            "name": "main",
+            "line": 11,
+            "column": 1,
+            "source": {
+              "path": "individual_03.py",
+              "sourceReference": 0
+            }
+          },
+          "variables": {
+            "divisors": "[1, 2]",
+            "k": "3",
+            "n": "6",
+            "special variables": "",
+            "function variables": "",
+            "sys": "<module 'sys' (built-in)>"
+          },
+          "values": {
+            "n": "6",
+            "k": "3",
+            "divisors": "[1, 2]"
+          }
+        }
+      ],
+      "output": "ptvsddebugpyPython: 3.14.6\nInterpreter: c:\\Users\\mansu\\Documents\\Codex\\2026-11-01\\https-disk-yandex-ru-d-yt9rq8lg9aq-3\\outputs\\Python_ЛР1-5_Вариант_13\\python-lab-01\\.venv\\Scripts\\python.exe\nДелители: 1 2 3 6\n",
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "file": "individual_04.py",
+      "marker": "term *=",
+      "condition": "k == 0",
+      "input": "1\n",
+      "expressions": [
+        "x",
+        "k",
+        "term",
+        "total"
+      ],
+      "before": {
+        "k": "0",
+        "term": "1.0",
+        "total": "1.0"
+      },
+      "after": {
+        "term": "0.16666666666666666"
+      },
+      "outputContains": [
+        "sinh = 1.1752011936"
+      ],
+      "stops": [
+        {
+          "label": "before",
+          "reason": "breakpoint",
+          "frame": {
+            "id": 2,
+            "name": "main",
+            "line": 17,
+            "column": 1,
+            "source": {
+              "path": "individual_04.py",
+              "sourceReference": 0
+            }
+          },
+          "variables": {
+            "eps": "1e-10",
+            "k": "0",
+            "term": "1.0",
+            "total": "1.0",
+            "x": "1.0",
+            "special variables": "",
+            "function variables": "",
+            "math": "<module 'math' (built-in)>",
+            "sys": "<module 'sys' (built-in)>"
+          },
+          "values": {
+            "x": "1.0",
+            "k": "0",
+            "term": "1.0",
+            "total": "1.0"
+          }
+        },
+        {
+          "label": "after next",
+          "reason": "step",
+          "frame": {
+            "id": 2,
+            "name": "main",
+            "line": 18,
+            "column": 1,
+            "source": {
+              "path": "individual_04.py",
+              "sourceReference": 0
+            }
+          },
+          "variables": {
+            "eps": "1e-10",
+            "k": "0",
+            "term": "0.16666666666666666",
+            "total": "1.0",
+            "x": "1.0",
+            "special variables": "",
+            "function variables": "",
+            "math": "<module 'math' (built-in)>",
+            "sys": "<module 'sys' (built-in)>"
+          },
+          "values": {
+            "x": "1.0",
+            "k": "0",
+            "term": "0.16666666666666666",
+            "total": "1.0"
+          }
+        }
+      ],
+      "output": "ptvsddebugpyPython: 3.14.6\nInterpreter: c:\\Users\\mansu\\Documents\\Codex\\2026-11-01\\https-disk-yandex-ru-d-yt9rq8lg9aq-3\\outputs\\Python_ЛР1-5_Вариант_13\\python-lab-01\\.venv\\Scripts\\python.exe\nsinh = 1.1752011936\nЧленов: 8\nОценка остатка: 7.647e-13\nПроверка 50 членов: 1.175201193644\nРасхождение: 2.665e-15\nРасхождение с math.sinh: 2.665e-15\n",
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "file": "verify.py",
+      "input": "",
+      "noBreakpoint": true,
+      "outputContains": [
+        "85/85"
+      ],
+      "stops": [],
+      "output": "ptvsddebugpyPython: 3.14.6\nInterpreter: c:\\Users\\mansu\\Documents\\Codex\\2026-11-01\\https-disk-yandex-ru-d-yt9rq8lg9aq-3\\outputs\\Python_ЛР1-5_Вариант_13\\python-lab-01\\.venv\\Scripts\\python.exe\nPython 3.14.6; 85/85\n",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "before_line": 1,
+    "variables": {}
+  },
+  {
+    "before_line": 3,
+    "variables": {
+      "n": 100999
+    }
+  },
+  {
+    "before_line": 4,
+    "variables": {
+      "n": 100999,
+      "first_sum": 1
+    }
+  },
+  {
+    "before_line": 5,
+    "variables": {
+      "n": 100999,
+      "first_sum": 1,
+      "last_sum": 27
+    }
+  },
+  {
+    "before_line": 7,
+    "variables": {
+      "n": 100999,
+      "first_sum": 1,
+      "last_sum": 27,
+      "difference": 26
+    }
+  }
+]

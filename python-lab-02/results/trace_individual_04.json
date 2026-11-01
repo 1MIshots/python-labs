@@ -1,0 +1,1305 @@
+{
+  "file": "individual_04.py",
+  "input": "1",
+  "output": "sinh = 1.1752011936\nЧленов: 8\nОценка остатка: 7.647e-13\nПроверка 50 членов: 1.175201193644\nРасхождение: 2.665e-15\nРасхождение с math.sinh: 2.665e-15\n",
+  "events": [
+    {
+      "line": 1,
+      "source": "import math",
+      "state": {}
+    },
+    {
+      "line": 2,
+      "source": "import sys",
+      "state": {}
+    },
+    {
+      "line": 4,
+      "source": "def main():",
+      "state": {}
+    },
+    {
+      "line": 32,
+      "source": "if __name__ == '__main__':",
+      "state": {}
+    },
+    {
+      "line": 33,
+      "source": "sys.exit(main())",
+      "state": {}
+    },
+    {
+      "line": 5,
+      "source": "x = float(input())",
+      "state": {}
+    },
+    {
+      "line": 6,
+      "source": "if not -1 <= x <= 1:",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 9,
+      "source": "eps = 1e-10",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 10,
+      "source": "k = 0",
+      "state": {
+        "x": 1.0,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 11,
+      "source": "term = x",
+      "state": {
+        "x": 1.0,
+        "k": 0,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 12,
+      "source": "total = term",
+      "state": {
+        "x": 1.0,
+        "k": 0,
+        "term": 1.0,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 13,
+      "source": "while abs(term) > eps:",
+      "state": {
+        "x": 1.0,
+        "k": 0,
+        "term": 1.0,
+        "total": 1.0,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 14,
+      "source": "if k + 1 >= 1000:",
+      "state": {
+        "x": 1.0,
+        "k": 0,
+        "term": 1.0,
+        "total": 1.0,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 17,
+      "source": "term *= x * x / ((2 * k + 2) * (2 * k + 3))",
+      "state": {
+        "x": 1.0,
+        "k": 0,
+        "term": 1.0,
+        "total": 1.0,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 18,
+      "source": "k += 1",
+      "state": {
+        "x": 1.0,
+        "k": 0,
+        "term": 0.16666666666666666,
+        "total": 1.0,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 19,
+      "source": "total += term",
+      "state": {
+        "x": 1.0,
+        "k": 1,
+        "term": 0.16666666666666666,
+        "total": 1.0,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 13,
+      "source": "while abs(term) > eps:",
+      "state": {
+        "x": 1.0,
+        "k": 1,
+        "term": 0.16666666666666666,
+        "total": 1.1666666666666667,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 14,
+      "source": "if k + 1 >= 1000:",
+      "state": {
+        "x": 1.0,
+        "k": 1,
+        "term": 0.16666666666666666,
+        "total": 1.1666666666666667,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 17,
+      "source": "term *= x * x / ((2 * k + 2) * (2 * k + 3))",
+      "state": {
+        "x": 1.0,
+        "k": 1,
+        "term": 0.16666666666666666,
+        "total": 1.1666666666666667,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 18,
+      "source": "k += 1",
+      "state": {
+        "x": 1.0,
+        "k": 1,
+        "term": 0.008333333333333333,
+        "total": 1.1666666666666667,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 19,
+      "source": "total += term",
+      "state": {
+        "x": 1.0,
+        "k": 2,
+        "term": 0.008333333333333333,
+        "total": 1.1666666666666667,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 13,
+      "source": "while abs(term) > eps:",
+      "state": {
+        "x": 1.0,
+        "k": 2,
+        "term": 0.008333333333333333,
+        "total": 1.175,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 14,
+      "source": "if k + 1 >= 1000:",
+      "state": {
+        "x": 1.0,
+        "k": 2,
+        "term": 0.008333333333333333,
+        "total": 1.175,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 17,
+      "source": "term *= x * x / ((2 * k + 2) * (2 * k + 3))",
+      "state": {
+        "x": 1.0,
+        "k": 2,
+        "term": 0.008333333333333333,
+        "total": 1.175,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 18,
+      "source": "k += 1",
+      "state": {
+        "x": 1.0,
+        "k": 2,
+        "term": 0.00019841269841269839,
+        "total": 1.175,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 19,
+      "source": "total += term",
+      "state": {
+        "x": 1.0,
+        "k": 3,
+        "term": 0.00019841269841269839,
+        "total": 1.175,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 13,
+      "source": "while abs(term) > eps:",
+      "state": {
+        "x": 1.0,
+        "k": 3,
+        "term": 0.00019841269841269839,
+        "total": 1.1751984126984127,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 14,
+      "source": "if k + 1 >= 1000:",
+      "state": {
+        "x": 1.0,
+        "k": 3,
+        "term": 0.00019841269841269839,
+        "total": 1.1751984126984127,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 17,
+      "source": "term *= x * x / ((2 * k + 2) * (2 * k + 3))",
+      "state": {
+        "x": 1.0,
+        "k": 3,
+        "term": 0.00019841269841269839,
+        "total": 1.1751984126984127,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 18,
+      "source": "k += 1",
+      "state": {
+        "x": 1.0,
+        "k": 3,
+        "term": 2.7557319223985884e-06,
+        "total": 1.1751984126984127,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 19,
+      "source": "total += term",
+      "state": {
+        "x": 1.0,
+        "k": 4,
+        "term": 2.7557319223985884e-06,
+        "total": 1.1751984126984127,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 13,
+      "source": "while abs(term) > eps:",
+      "state": {
+        "x": 1.0,
+        "k": 4,
+        "term": 2.7557319223985884e-06,
+        "total": 1.1752011684303352,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 14,
+      "source": "if k + 1 >= 1000:",
+      "state": {
+        "x": 1.0,
+        "k": 4,
+        "term": 2.7557319223985884e-06,
+        "total": 1.1752011684303352,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 17,
+      "source": "term *= x * x / ((2 * k + 2) * (2 * k + 3))",
+      "state": {
+        "x": 1.0,
+        "k": 4,
+        "term": 2.7557319223985884e-06,
+        "total": 1.1752011684303352,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 18,
+      "source": "k += 1",
+      "state": {
+        "x": 1.0,
+        "k": 4,
+        "term": 2.505210838544171e-08,
+        "total": 1.1752011684303352,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 19,
+      "source": "total += term",
+      "state": {
+        "x": 1.0,
+        "k": 5,
+        "term": 2.505210838544171e-08,
+        "total": 1.1752011684303352,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 13,
+      "source": "while abs(term) > eps:",
+      "state": {
+        "x": 1.0,
+        "k": 5,
+        "term": 2.505210838544171e-08,
+        "total": 1.1752011934824436,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 14,
+      "source": "if k + 1 >= 1000:",
+      "state": {
+        "x": 1.0,
+        "k": 5,
+        "term": 2.505210838544171e-08,
+        "total": 1.1752011934824436,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 17,
+      "source": "term *= x * x / ((2 * k + 2) * (2 * k + 3))",
+      "state": {
+        "x": 1.0,
+        "k": 5,
+        "term": 2.505210838544171e-08,
+        "total": 1.1752011934824436,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 18,
+      "source": "k += 1",
+      "state": {
+        "x": 1.0,
+        "k": 5,
+        "term": 1.6059043836821608e-10,
+        "total": 1.1752011934824436,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 19,
+      "source": "total += term",
+      "state": {
+        "x": 1.0,
+        "k": 6,
+        "term": 1.6059043836821608e-10,
+        "total": 1.1752011934824436,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 13,
+      "source": "while abs(term) > eps:",
+      "state": {
+        "x": 1.0,
+        "k": 6,
+        "term": 1.6059043836821608e-10,
+        "total": 1.175201193643034,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 14,
+      "source": "if k + 1 >= 1000:",
+      "state": {
+        "x": 1.0,
+        "k": 6,
+        "term": 1.6059043836821608e-10,
+        "total": 1.175201193643034,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 17,
+      "source": "term *= x * x / ((2 * k + 2) * (2 * k + 3))",
+      "state": {
+        "x": 1.0,
+        "k": 6,
+        "term": 1.6059043836821608e-10,
+        "total": 1.175201193643034,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 18,
+      "source": "k += 1",
+      "state": {
+        "x": 1.0,
+        "k": 6,
+        "term": 7.647163731819814e-13,
+        "total": 1.175201193643034,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 19,
+      "source": "total += term",
+      "state": {
+        "x": 1.0,
+        "k": 7,
+        "term": 7.647163731819814e-13,
+        "total": 1.175201193643034,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 13,
+      "source": "while abs(term) > eps:",
+      "state": {
+        "x": 1.0,
+        "k": 7,
+        "term": 7.647163731819814e-13,
+        "total": 1.1752011936437987,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 20,
+      "source": "reference = math.fsum(",
+      "state": {
+        "x": 1.0,
+        "k": 7,
+        "term": 7.647163731819814e-13,
+        "total": 1.1752011936437987,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0,
+        "k": 7,
+        "term": 7.647163731819814e-13,
+        "total": 1.1752011936437987,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 20,
+      "source": "reference = math.fsum(",
+      "state": {
+        "x": 1.0,
+        "k": 7,
+        "term": 7.647163731819814e-13,
+        "total": 1.1752011936437987,
+        "eps": 1e-10
+      }
+    },
+    {
+      "line": 20,
+      "source": "reference = math.fsum(",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 21,
+      "source": "x ** (2 * j + 1) / math.factorial(2 * j + 1)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 22,
+      "source": "for j in range(50)",
+      "state": {
+        "x": 1.0
+      }
+    },
+    {
+      "line": 24,
+      "source": "print(f'sinh = {total:.10f}')",
+      "state": {
+        "x": 1.0,
+        "k": 7,
+        "term": 7.647163731819814e-13,
+        "total": 1.1752011936437987,
+        "eps": 1e-10,
+        "reference": 1.1752011936438014
+      }
+    },
+    {
+      "line": 25,
+      "source": "print(f'Членов: {k + 1}')",
+      "state": {
+        "x": 1.0,
+        "k": 7,
+        "term": 7.647163731819814e-13,
+        "total": 1.1752011936437987,
+        "eps": 1e-10,
+        "reference": 1.1752011936438014
+      }
+    },
+    {
+      "line": 26,
+      "source": "print(f'Оценка остатка: {abs(term):.3e}')",
+      "state": {
+        "x": 1.0,
+        "k": 7,
+        "term": 7.647163731819814e-13,
+        "total": 1.1752011936437987,
+        "eps": 1e-10,
+        "reference": 1.1752011936438014
+      }
+    },
+    {
+      "line": 27,
+      "source": "print(f'Проверка 50 членов: {reference:.12f}')",
+      "state": {
+        "x": 1.0,
+        "k": 7,
+        "term": 7.647163731819814e-13,
+        "total": 1.1752011936437987,
+        "eps": 1e-10,
+        "reference": 1.1752011936438014
+      }
+    },
+    {
+      "line": 28,
+      "source": "print(f'Расхождение: {abs(total - reference):.3e}')",
+      "state": {
+        "x": 1.0,
+        "k": 7,
+        "term": 7.647163731819814e-13,
+        "total": 1.1752011936437987,
+        "eps": 1e-10,
+        "reference": 1.1752011936438014
+      }
+    },
+    {
+      "line": 29,
+      "source": "print(f'Расхождение с math.sinh: {abs(total - math.sinh(x)):.3e}')",
+      "state": {
+        "x": 1.0,
+        "k": 7,
+        "term": 7.647163731819814e-13,
+        "total": 1.1752011936437987,
+        "eps": 1e-10,
+        "reference": 1.1752011936438014
+      }
+    },
+    {
+      "line": 30,
+      "source": "return 0",
+      "state": {
+        "x": 1.0,
+        "k": 7,
+        "term": 7.647163731819814e-13,
+        "total": 1.1752011936437987,
+        "eps": 1e-10,
+        "reference": 1.1752011936438014
+      }
+    }
+  ]
+}
