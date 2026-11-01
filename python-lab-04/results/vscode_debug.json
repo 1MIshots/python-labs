@@ -1,0 +1,108 @@
+{
+  "vscode": "1.144.0",
+  "debuggerVersion": "2026.6.0",
+  "method": "VS Code Extension Host API and Python Debugger, DAP breakpoints and next",
+  "passed": true,
+  "sessions": [
+    {
+      "lab": 4,
+      "file": "between_extrema.py",
+      "marker": "if number > numbers[maximum]:",
+      "condition": "i == 3",
+      "input": "5 -2 3 5\n",
+      "expressions": [
+        "i",
+        "number",
+        "minimum",
+        "maximum"
+      ],
+      "before": {
+        "minimum": "1",
+        "maximum": "0",
+        "number": "5"
+      },
+      "after": {
+        "maximum": "0"
+      },
+      "outputContains": [
+        "Положительных между: 0"
+      ],
+      "stops": [
+        {
+          "label": "before",
+          "reason": "breakpoint",
+          "frame": {
+            "id": 2,
+            "name": "main",
+            "line": 12,
+            "column": 1,
+            "source": {
+              "path": "between_extrema.py",
+              "sourceReference": 0
+            }
+          },
+          "variables": {
+            "i": "3",
+            "maximum": "0",
+            "minimum": "1",
+            "number": "5",
+            "numbers": "[5, -2, 3, 5]",
+            "special variables": "",
+            "function variables": "",
+            "sys": "<module 'sys' (built-in)>"
+          },
+          "values": {
+            "i": "3",
+            "number": "5",
+            "minimum": "1",
+            "maximum": "0"
+          }
+        },
+        {
+          "label": "after next",
+          "reason": "step",
+          "frame": {
+            "id": 2,
+            "name": "main",
+            "line": 9,
+            "column": 1,
+            "source": {
+              "path": "between_extrema.py",
+              "sourceReference": 0
+            }
+          },
+          "variables": {
+            "i": "3",
+            "maximum": "0",
+            "minimum": "1",
+            "number": "5",
+            "numbers": "[5, -2, 3, 5]",
+            "special variables": "",
+            "function variables": "",
+            "sys": "<module 'sys' (built-in)>"
+          },
+          "values": {
+            "i": "3",
+            "number": "5",
+            "minimum": "1",
+            "maximum": "0"
+          }
+        }
+      ],
+      "output": "ptvsddebugpyPython: 3.14.6\nInterpreter: c:\\Users\\mansu\\Documents\\Codex\\2026-11-01\\https-disk-yandex-ru-d-yt9rq8lg9aq-3\\outputs\\Python_ЛР1-5_Вариант_13\\python-lab-01\\.venv\\Scripts\\python.exe\nИндекс минимума: 1\nИндекс максимума: 0\nПоложительных между: 0\n",
+      "passed": true
+    },
+    {
+      "lab": 4,
+      "file": "verify.py",
+      "input": "",
+      "noBreakpoint": true,
+      "outputContains": [
+        "49/49"
+      ],
+      "stops": [],
+      "output": "ptvsddebugpyPython: 3.14.6\nInterpreter: c:\\Users\\mansu\\Documents\\Codex\\2026-11-01\\https-disk-yandex-ru-d-yt9rq8lg9aq-3\\outputs\\Python_ЛР1-5_Вариант_13\\python-lab-01\\.venv\\Scripts\\python.exe\nPython 3.14.6; 49/49\n",
+      "passed": true
+    }
+  ]
+}

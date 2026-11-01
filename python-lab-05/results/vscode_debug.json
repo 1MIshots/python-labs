@@ -1,0 +1,119 @@
+{
+  "vscode": "1.144.0",
+  "debuggerVersion": "2026.6.0",
+  "method": "VS Code Extension Host API and Python Debugger, DAP breakpoints and next",
+  "passed": true,
+  "sessions": [
+    {
+      "lab": 5,
+      "file": "workers.py",
+      "marker": "if reference_year - item['year'] > experience]",
+      "condition": "item['name'].startswith('Белов')",
+      "input": "2026\nadd\nБелов Б.Б.\nинженер\n2016\nadd\nАндреева А.А.\nтехник\n2015\nadd\nВолков В.В.\nлаборант\n2026\nselect 10\nexit\n",
+      "expressions": [
+        "reference_year",
+        "experience",
+        "item['year']",
+        "selected"
+      ],
+      "before": {
+        "reference_year": "2026",
+        "experience": "10",
+        "item['year']": "2016"
+      },
+      "outputContains": [
+        "Андреева А.А. | техник | 2015"
+      ],
+      "stops": [
+        {
+          "label": "before",
+          "reason": "breakpoint",
+          "frame": {
+            "id": 2,
+            "name": "main",
+            "line": 51,
+            "column": 1,
+            "source": {
+              "path": "workers.py",
+              "sourceReference": 0
+            }
+          },
+          "variables": {
+            "argument": "'10'",
+            "command": "'select'",
+            "experience": "10",
+            "item": "{'name': 'Белов Б.Б.', 'post': 'инженер', 'year': 2016}",
+            "line": "'select 10'",
+            "name": "'Волков В.В.'",
+            "parts": "['select', '10']",
+            "post": "'лаборант'",
+            "reference_year": "2026",
+            "workers": "[{'name': 'Андреева А.А.', 'post': 'техник', 'year': 2015}, {'name': 'Белов Б.Б.', 'post': 'инженер', 'year': 2016}, {'name': 'Волков В.В.', 'post': 'лаборант', 'year': 2026}]",
+            "year": "2026",
+            "year_text": "'2026'",
+            "special variables": "",
+            "function variables": "",
+            "sys": "<module 'sys' (built-in)>"
+          },
+          "values": {
+            "reference_year": "2026",
+            "experience": "10",
+            "item['year']": "2016",
+            "selected": "unavailable"
+          }
+        },
+        {
+          "label": "after next",
+          "reason": "step",
+          "frame": {
+            "id": 2,
+            "name": "main",
+            "line": 50,
+            "column": 1,
+            "source": {
+              "path": "workers.py",
+              "sourceReference": 0
+            }
+          },
+          "variables": {
+            "argument": "'10'",
+            "command": "'select'",
+            "experience": "10",
+            "item": "{'name': 'Белов Б.Б.', 'post': 'инженер', 'year': 2016}",
+            "line": "'select 10'",
+            "name": "'Волков В.В.'",
+            "parts": "['select', '10']",
+            "post": "'лаборант'",
+            "reference_year": "2026",
+            "workers": "[{'name': 'Андреева А.А.', 'post': 'техник', 'year': 2015}, {'name': 'Белов Б.Б.', 'post': 'инженер', 'year': 2016}, {'name': 'Волков В.В.', 'post': 'лаборант', 'year': 2026}]",
+            "year": "2026",
+            "year_text": "'2026'",
+            "special variables": "",
+            "function variables": "",
+            "sys": "<module 'sys' (built-in)>"
+          },
+          "values": {
+            "reference_year": "2026",
+            "experience": "10",
+            "item['year']": "2016",
+            "selected": "unavailable"
+          }
+        }
+      ],
+      "output": "ptvsddebugpyPython: 3.14.6\nInterpreter: c:\\Users\\mansu\\Documents\\Codex\\2026-11-01\\https-disk-yandex-ru-d-yt9rq8lg9aq-3\\outputs\\Python_ЛР1-5_Вариант_13\\python-lab-01\\.venv\\Scripts\\python.exe\nДобавлено\nДобавлено\nДобавлено\n1. Андреева А.А. | техник | 2015\n",
+      "passed": true
+    },
+    {
+      "lab": 5,
+      "file": "verify.py",
+      "input": "",
+      "noBreakpoint": true,
+      "outputContains": [
+        "43/43"
+      ],
+      "stops": [],
+      "output": "ptvsddebugpyPython: 3.14.6\nInterpreter: c:\\Users\\mansu\\Documents\\Codex\\2026-11-01\\https-disk-yandex-ru-d-yt9rq8lg9aq-3\\outputs\\Python_ЛР1-5_Вариант_13\\python-lab-01\\.venv\\Scripts\\python.exe\nPython 3.14.6; 43/43\n",
+      "passed": true
+    }
+  ]
+}

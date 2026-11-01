@@ -1,0 +1,272 @@
+Python 3.14.6; 34/34
+replace_spaces.py | 'мама мыла раму'
+INPUT: 'мама мыла раму\n'
+EXPECTED: "'мама_мыла_раму'\n"
+STDOUT: "'мама_мыла_раму'\n"
+STDERR: ''
+EXIT: 0
+PASS
+
+replace_spaces.py | ' а  б '
+INPUT: ' а  б \n'
+EXPECTED: "'_а__б_'\n"
+STDOUT: "'_а__б_'\n"
+STDERR: ''
+EXIT: 0
+PASS
+
+replace_spaces.py | ''
+INPUT: '\n'
+EXPECTED: "''\n"
+STDOUT: "''\n"
+STDERR: ''
+EXIT: 0
+PASS
+
+replace_spaces.py | 'а\tб'
+INPUT: 'а\tб\n'
+EXPECTED: "'а\\tб'\n"
+STDOUT: "'а\\tб'\n"
+STDERR: ''
+EXIT: 0
+PASS
+
+remove_middle.py | кот
+INPUT: 'кот\n'
+EXPECTED: "'кт'\n"
+STDOUT: "'кт'\n"
+STDERR: ''
+EXIT: 0
+PASS
+
+remove_middle.py | мама
+INPUT: 'мама\n'
+EXPECTED: "'ма'\n"
+STDOUT: "'ма'\n"
+STDERR: ''
+EXIT: 0
+PASS
+
+remove_middle.py | я
+INPUT: 'я\n'
+EXPECTED: "''\n"
+STDOUT: "''\n"
+STDERR: ''
+EXIT: 0
+PASS
+
+remove_middle.py | мы
+INPUT: 'мы\n'
+EXPECTED: "''\n"
+STDOUT: "''\n"
+STDERR: ''
+EXIT: 0
+PASS
+
+remove_middle.py | Пустая строка
+INPUT: '\n'
+EXPECTED: 'Ошибка: пустое слово\n'
+STDOUT: ''
+STDERR: 'Ошибка: пустое слово\n'
+EXIT: 1
+PASS
+
+justify_text.py | 'мама мыла раму'; L=17
+INPUT: 'мама мыла раму\n17\n'
+EXPECTED: "'мама   мыла  раму'\nДлина: 17\n"
+STDOUT: "'мама   мыла  раму'\nДлина: 17\n"
+STDERR: ''
+EXIT: 0
+PASS
+
+justify_text.py | 'а   б в'; L=7
+INPUT: 'а   б в\n7\n'
+EXPECTED: "'а  б  в'\nДлина: 7\n"
+STDOUT: "'а  б  в'\nДлина: 7\n"
+STDERR: ''
+EXIT: 0
+PASS
+
+justify_text.py | 'два слова'; L=9
+INPUT: 'два слова\n9\n'
+EXPECTED: "'два слова'\nДлина: 9\n"
+STDOUT: "'два слова'\nДлина: 9\n"
+STDERR: ''
+EXIT: 0
+PASS
+
+justify_text.py | 'два слова'; L=6
+INPUT: 'два слова\n6\n'
+EXPECTED: 'Ошибка: слова или длина\n'
+STDOUT: ''
+STDERR: 'Ошибка: слова или длина\n'
+EXIT: 1
+PASS
+
+justify_text.py | 'слово'; L=8
+INPUT: 'слово\n8\n'
+EXPECTED: 'Ошибка: слова или длина\n'
+STDOUT: ''
+STDERR: 'Ошибка: слова или длина\n'
+EXIT: 1
+PASS
+
+justify_text.py | ' два слова'; L=10
+INPUT: ' два слова\n10\n'
+EXPECTED: 'Ошибка: формат строки\n'
+STDOUT: ''
+STDERR: 'Ошибка: формат строки\n'
+EXIT: 1
+PASS
+
+justify_text.py | '   '; L=12
+INPUT: '   \n12\n'
+EXPECTED: 'Ошибка: формат строки\n'
+STDOUT: ''
+STDERR: 'Ошибка: формат строки\n'
+EXIT: 1
+PASS
+
+justify_text.py | 'а\tб'; L=10
+INPUT: 'а\tб\n10\n'
+EXPECTED: 'Ошибка: формат строки\n'
+STDOUT: ''
+STDERR: 'Ошибка: формат строки\n'
+EXIT: 1
+PASS
+
+individual_01.py | ''
+INPUT: '\n'
+EXPECTED: 'Не найдено\n'
+STDOUT: 'Не найдено\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_01.py | 'мир'
+INPUT: 'мир\n'
+EXPECTED: '2\n'
+STDOUT: '2\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_01.py | 'ииии'
+INPUT: 'ииии\n'
+EXPECTED: '2\n4\n'
+STDOUT: '2\n4\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_01.py | 'Ииiи'
+INPUT: 'Ииiи\n'
+EXPECTED: '2\n4\n'
+STDOUT: '2\n4\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_01.py | 'иabc'
+INPUT: 'иabc\n'
+EXPECTED: 'Не найдено\n'
+STDOUT: 'Не найдено\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_01.py | 'аиии'
+INPUT: 'аиии\n'
+EXPECTED: '2\n4\n'
+STDOUT: '2\n4\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_02.py | нк
+INPUT: 'нк\n'
+EXPECTED: 'Раньше н\n'
+STDOUT: 'Раньше н\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_02.py | кн
+INPUT: 'кн\n'
+EXPECTED: 'Раньше к\n'
+STDOUT: 'Раньше к\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_02.py | аник
+INPUT: 'аник\n'
+EXPECTED: 'Раньше н\n'
+STDOUT: 'Раньше н\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_02.py | ккнн
+INPUT: 'ккнн\n'
+EXPECTED: 'Раньше к\n'
+STDOUT: 'Раньше к\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_02.py | НКнк
+INPUT: 'НКнк\n'
+EXPECTED: 'Раньше н\n'
+STDOUT: 'Раньше н\n'
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_03.py | я
+INPUT: 'я\n'
+EXPECTED: "'я'\n"
+STDOUT: "'я'\n"
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_03.py | мы
+INPUT: 'мы\n'
+EXPECTED: "'ым'\n"
+STDOUT: "'ым'\n"
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_03.py | питон
+INPUT: 'питон\n'
+EXPECTED: "'итонп'\n"
+STDOUT: "'итонп'\n"
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_03.py | Python
+INPUT: 'Python\n'
+EXPECTED: "'ythonP'\n"
+STDOUT: "'ythonP'\n"
+STDERR: ''
+EXIT: 0
+PASS
+
+individual_03.py | ааа
+INPUT: 'ааа\n'
+EXPECTED: "'ааа'\n"
+STDOUT: "'ааа'\n"
+STDERR: ''
+EXIT: 0
+PASS
+
+justify_text.py | а б в; 6
+INPUT: 'а б в\n6\n'
+EXPECTED: "'а  б в'\nДлина: 6\n"
+STDOUT: "'а  б в'\nДлина: 6\n"
+STDERR: ''
+EXIT: 0
+PASS

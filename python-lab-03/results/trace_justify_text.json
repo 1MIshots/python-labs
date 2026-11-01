@@ -1,0 +1,628 @@
+{
+  "file": "justify_text.py",
+  "input": "мама мыла раму\n17",
+  "output": "'мама   мыла  раму'\nДлина: 17\n",
+  "events": [
+    {
+      "line": 1,
+      "source": "import sys",
+      "state": {}
+    },
+    {
+      "line": 3,
+      "source": "def main():",
+      "state": {}
+    },
+    {
+      "line": 29,
+      "source": "if __name__ == '__main__':",
+      "state": {}
+    },
+    {
+      "line": 30,
+      "source": "sys.exit(main())",
+      "state": {}
+    },
+    {
+      "line": 4,
+      "source": "text = input()",
+      "state": {}
+    },
+    {
+      "line": 5,
+      "source": "length = int(input())",
+      "state": {}
+    },
+    {
+      "line": 6,
+      "source": "if (not text or text.startswith(' ') or text.endswith(' ')",
+      "state": {
+        "length": 17
+      }
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {
+        "length": 17
+      }
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {}
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {
+        "length": 17
+      }
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {}
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {
+        "length": 17
+      }
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {}
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {
+        "length": 17
+      }
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {}
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {
+        "length": 17
+      }
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {}
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {
+        "length": 17
+      }
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {}
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {
+        "length": 17
+      }
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {}
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {
+        "length": 17
+      }
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {}
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {
+        "length": 17
+      }
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {}
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {
+        "length": 17
+      }
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {}
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {
+        "length": 17
+      }
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {}
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {
+        "length": 17
+      }
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {}
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {
+        "length": 17
+      }
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {}
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {
+        "length": 17
+      }
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {}
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {
+        "length": 17
+      }
+    },
+    {
+      "line": 7,
+      "source": "or any(c.isspace() and c != ' ' for c in text)):",
+      "state": {}
+    },
+    {
+      "line": 10,
+      "source": "words = text.split()",
+      "state": {
+        "length": 17
+      }
+    },
+    {
+      "line": 11,
+      "source": "if len(words) < 2 or not len(text) <= length <= 10000:",
+      "state": {
+        "length": 17
+      }
+    },
+    {
+      "line": 14,
+      "source": "letters = 0",
+      "state": {
+        "length": 17
+      }
+    },
+    {
+      "line": 15,
+      "source": "for word in words:",
+      "state": {
+        "letters": 0,
+        "length": 17
+      }
+    },
+    {
+      "line": 16,
+      "source": "letters += len(word)",
+      "state": {
+        "letters": 0,
+        "length": 17,
+        "word": "мама"
+      }
+    },
+    {
+      "line": 15,
+      "source": "for word in words:",
+      "state": {
+        "letters": 4,
+        "length": 17,
+        "word": "мама"
+      }
+    },
+    {
+      "line": 16,
+      "source": "letters += len(word)",
+      "state": {
+        "letters": 4,
+        "length": 17,
+        "word": "мыла"
+      }
+    },
+    {
+      "line": 15,
+      "source": "for word in words:",
+      "state": {
+        "letters": 8,
+        "length": 17,
+        "word": "мыла"
+      }
+    },
+    {
+      "line": 16,
+      "source": "letters += len(word)",
+      "state": {
+        "letters": 8,
+        "length": 17,
+        "word": "раму"
+      }
+    },
+    {
+      "line": 15,
+      "source": "for word in words:",
+      "state": {
+        "letters": 12,
+        "length": 17,
+        "word": "раму"
+      }
+    },
+    {
+      "line": 17,
+      "source": "gap_count = len(words) - 1",
+      "state": {
+        "letters": 12,
+        "length": 17,
+        "word": "раму"
+      }
+    },
+    {
+      "line": 18,
+      "source": "base, extra = divmod(length - letters, gap_count)",
+      "state": {
+        "letters": 12,
+        "length": 17,
+        "gap_count": 2,
+        "word": "раму"
+      }
+    },
+    {
+      "line": 19,
+      "source": "parts = []",
+      "state": {
+        "letters": 12,
+        "length": 17,
+        "gap_count": 2,
+        "base": 2,
+        "extra": 1,
+        "word": "раму"
+      }
+    },
+    {
+      "line": 20,
+      "source": "for i, word in enumerate(words):",
+      "state": {
+        "letters": 12,
+        "length": 17,
+        "gap_count": 2,
+        "base": 2,
+        "extra": 1,
+        "word": "раму",
+        "parts": []
+      }
+    },
+    {
+      "line": 21,
+      "source": "parts.append(word)",
+      "state": {
+        "letters": 12,
+        "length": 17,
+        "gap_count": 2,
+        "base": 2,
+        "extra": 1,
+        "i": 0,
+        "word": "мама",
+        "parts": []
+      }
+    },
+    {
+      "line": 22,
+      "source": "if i < gap_count:",
+      "state": {
+        "letters": 12,
+        "length": 17,
+        "gap_count": 2,
+        "base": 2,
+        "extra": 1,
+        "i": 0,
+        "word": "мама",
+        "parts": [
+          "мама"
+        ]
+      }
+    },
+    {
+      "line": 23,
+      "source": "parts.append(' ' * (base + (i < extra)))",
+      "state": {
+        "letters": 12,
+        "length": 17,
+        "gap_count": 2,
+        "base": 2,
+        "extra": 1,
+        "i": 0,
+        "word": "мама",
+        "parts": [
+          "мама"
+        ]
+      }
+    },
+    {
+      "line": 20,
+      "source": "for i, word in enumerate(words):",
+      "state": {
+        "letters": 12,
+        "length": 17,
+        "gap_count": 2,
+        "base": 2,
+        "extra": 1,
+        "i": 0,
+        "word": "мама",
+        "parts": [
+          "мама",
+          "   "
+        ]
+      }
+    },
+    {
+      "line": 21,
+      "source": "parts.append(word)",
+      "state": {
+        "letters": 12,
+        "length": 17,
+        "gap_count": 2,
+        "base": 2,
+        "extra": 1,
+        "i": 1,
+        "word": "мыла",
+        "parts": [
+          "мама",
+          "   "
+        ]
+      }
+    },
+    {
+      "line": 22,
+      "source": "if i < gap_count:",
+      "state": {
+        "letters": 12,
+        "length": 17,
+        "gap_count": 2,
+        "base": 2,
+        "extra": 1,
+        "i": 1,
+        "word": "мыла",
+        "parts": [
+          "мама",
+          "   ",
+          "мыла"
+        ]
+      }
+    },
+    {
+      "line": 23,
+      "source": "parts.append(' ' * (base + (i < extra)))",
+      "state": {
+        "letters": 12,
+        "length": 17,
+        "gap_count": 2,
+        "base": 2,
+        "extra": 1,
+        "i": 1,
+        "word": "мыла",
+        "parts": [
+          "мама",
+          "   ",
+          "мыла"
+        ]
+      }
+    },
+    {
+      "line": 20,
+      "source": "for i, word in enumerate(words):",
+      "state": {
+        "letters": 12,
+        "length": 17,
+        "gap_count": 2,
+        "base": 2,
+        "extra": 1,
+        "i": 1,
+        "word": "мыла",
+        "parts": [
+          "мама",
+          "   ",
+          "мыла",
+          "  "
+        ]
+      }
+    },
+    {
+      "line": 21,
+      "source": "parts.append(word)",
+      "state": {
+        "letters": 12,
+        "length": 17,
+        "gap_count": 2,
+        "base": 2,
+        "extra": 1,
+        "i": 2,
+        "word": "раму",
+        "parts": [
+          "мама",
+          "   ",
+          "мыла",
+          "  "
+        ]
+      }
+    },
+    {
+      "line": 22,
+      "source": "if i < gap_count:",
+      "state": {
+        "letters": 12,
+        "length": 17,
+        "gap_count": 2,
+        "base": 2,
+        "extra": 1,
+        "i": 2,
+        "word": "раму",
+        "parts": [
+          "мама",
+          "   ",
+          "мыла",
+          "  ",
+          "раму"
+        ]
+      }
+    },
+    {
+      "line": 20,
+      "source": "for i, word in enumerate(words):",
+      "state": {
+        "letters": 12,
+        "length": 17,
+        "gap_count": 2,
+        "base": 2,
+        "extra": 1,
+        "i": 2,
+        "word": "раму",
+        "parts": [
+          "мама",
+          "   ",
+          "мыла",
+          "  ",
+          "раму"
+        ]
+      }
+    },
+    {
+      "line": 24,
+      "source": "result = ''.join(parts)",
+      "state": {
+        "letters": 12,
+        "length": 17,
+        "gap_count": 2,
+        "base": 2,
+        "extra": 1,
+        "i": 2,
+        "word": "раму",
+        "parts": [
+          "мама",
+          "   ",
+          "мыла",
+          "  ",
+          "раму"
+        ]
+      }
+    },
+    {
+      "line": 25,
+      "source": "print(repr(result))",
+      "state": {
+        "letters": 12,
+        "length": 17,
+        "gap_count": 2,
+        "base": 2,
+        "extra": 1,
+        "i": 2,
+        "word": "раму",
+        "parts": [
+          "мама",
+          "   ",
+          "мыла",
+          "  ",
+          "раму"
+        ],
+        "result": "мама   мыла  раму"
+      }
+    },
+    {
+      "line": 26,
+      "source": "print(f'Длина: {len(result)}')",
+      "state": {
+        "letters": 12,
+        "length": 17,
+        "gap_count": 2,
+        "base": 2,
+        "extra": 1,
+        "i": 2,
+        "word": "раму",
+        "parts": [
+          "мама",
+          "   ",
+          "мыла",
+          "  ",
+          "раму"
+        ],
+        "result": "мама   мыла  раму"
+      }
+    },
+    {
+      "line": 27,
+      "source": "return 0",
+      "state": {
+        "letters": 12,
+        "length": 17,
+        "gap_count": 2,
+        "base": 2,
+        "extra": 1,
+        "i": 2,
+        "word": "раму",
+        "parts": [
+          "мама",
+          "   ",
+          "мыла",
+          "  ",
+          "раму"
+        ],
+        "result": "мама   мыла  раму"
+      }
+    }
+  ]
+}

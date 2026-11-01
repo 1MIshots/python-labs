@@ -1,0 +1,1802 @@
+{
+  "file": "workers.py",
+  "input": "2026\nadd\nБелов Б.Б.\nинженер\n2016\nadd\nАндреева А.А.\nтехник\n2015\nadd\nВолков В.В.\nлаборант\n2026\nselect 10\nexit",
+  "output": "Добавлено\nДобавлено\nДобавлено\n1. Андреева А.А. | техник | 2015\n",
+  "events": [
+    {
+      "line": 1,
+      "source": "import sys",
+      "state": {}
+    },
+    {
+      "line": 3,
+      "source": "def show(records):",
+      "state": {}
+    },
+    {
+      "line": 9,
+      "source": "def main():",
+      "state": {}
+    },
+    {
+      "line": 59,
+      "source": "if __name__ == '__main__':",
+      "state": {}
+    },
+    {
+      "line": 60,
+      "source": "sys.exit(main())",
+      "state": {}
+    },
+    {
+      "line": 10,
+      "source": "try:",
+      "state": {}
+    },
+    {
+      "line": 11,
+      "source": "reference_year = int(input())",
+      "state": {}
+    },
+    {
+      "line": 15,
+      "source": "if not 1 <= reference_year <= 9999:",
+      "state": {
+        "reference_year": 2026
+      }
+    },
+    {
+      "line": 18,
+      "source": "workers = []",
+      "state": {
+        "reference_year": 2026
+      }
+    },
+    {
+      "line": 19,
+      "source": "while True:",
+      "state": {
+        "reference_year": 2026,
+        "workers": []
+      }
+    },
+    {
+      "line": 20,
+      "source": "line = input().strip()",
+      "state": {
+        "reference_year": 2026,
+        "workers": []
+      }
+    },
+    {
+      "line": 21,
+      "source": "if not line:",
+      "state": {
+        "reference_year": 2026,
+        "workers": []
+      }
+    },
+    {
+      "line": 23,
+      "source": "parts = line.split(maxsplit=1)",
+      "state": {
+        "reference_year": 2026,
+        "workers": []
+      }
+    },
+    {
+      "line": 24,
+      "source": "command = parts[0].casefold()",
+      "state": {
+        "reference_year": 2026,
+        "workers": []
+      }
+    },
+    {
+      "line": 25,
+      "source": "argument = parts[1] if len(parts) == 2 else ''",
+      "state": {
+        "reference_year": 2026,
+        "workers": [],
+        "command": "add"
+      }
+    },
+    {
+      "line": 26,
+      "source": "if command == 'exit' and not argument:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [],
+        "command": "add"
+      }
+    },
+    {
+      "line": 28,
+      "source": "if command == 'add' and not argument:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [],
+        "command": "add"
+      }
+    },
+    {
+      "line": 29,
+      "source": "name, post, year_text = input().strip(), input().strip(), input()",
+      "state": {
+        "reference_year": 2026,
+        "workers": [],
+        "command": "add"
+      }
+    },
+    {
+      "line": 30,
+      "source": "try:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [],
+        "command": "add"
+      }
+    },
+    {
+      "line": 31,
+      "source": "year = int(year_text)",
+      "state": {
+        "reference_year": 2026,
+        "workers": [],
+        "command": "add"
+      }
+    },
+    {
+      "line": 32,
+      "source": "if not name or not post or not 1 <= year <= reference_year:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [],
+        "command": "add"
+      }
+    },
+    {
+      "line": 37,
+      "source": "workers.append({'name': name, 'post': post, 'year': year})",
+      "state": {
+        "reference_year": 2026,
+        "workers": [],
+        "command": "add"
+      }
+    },
+    {
+      "line": 38,
+      "source": "workers.sort(key=lambda item: item['name'].casefold())",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 38,
+      "source": "workers.sort(key=lambda item: item['name'].casefold())",
+      "state": {
+        "item": {
+          "name": "Белов Б.Б.",
+          "post": "инженер",
+          "year": 2016
+        }
+      }
+    },
+    {
+      "line": 39,
+      "source": "print('Добавлено')",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 19,
+      "source": "while True:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 20,
+      "source": "line = input().strip()",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 21,
+      "source": "if not line:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 23,
+      "source": "parts = line.split(maxsplit=1)",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 24,
+      "source": "command = parts[0].casefold()",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 25,
+      "source": "argument = parts[1] if len(parts) == 2 else ''",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 26,
+      "source": "if command == 'exit' and not argument:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 28,
+      "source": "if command == 'add' and not argument:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 29,
+      "source": "name, post, year_text = input().strip(), input().strip(), input()",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 30,
+      "source": "try:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 31,
+      "source": "year = int(year_text)",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 32,
+      "source": "if not name or not post or not 1 <= year <= reference_year:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 37,
+      "source": "workers.append({'name': name, 'post': post, 'year': year})",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 38,
+      "source": "workers.sort(key=lambda item: item['name'].casefold())",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 38,
+      "source": "workers.sort(key=lambda item: item['name'].casefold())",
+      "state": {
+        "item": {
+          "name": "Белов Б.Б.",
+          "post": "инженер",
+          "year": 2016
+        }
+      }
+    },
+    {
+      "line": 38,
+      "source": "workers.sort(key=lambda item: item['name'].casefold())",
+      "state": {
+        "item": {
+          "name": "Андреева А.А.",
+          "post": "техник",
+          "year": 2015
+        }
+      }
+    },
+    {
+      "line": 39,
+      "source": "print('Добавлено')",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 19,
+      "source": "while True:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 20,
+      "source": "line = input().strip()",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 21,
+      "source": "if not line:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 23,
+      "source": "parts = line.split(maxsplit=1)",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 24,
+      "source": "command = parts[0].casefold()",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 25,
+      "source": "argument = parts[1] if len(parts) == 2 else ''",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 26,
+      "source": "if command == 'exit' and not argument:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 28,
+      "source": "if command == 'add' and not argument:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 29,
+      "source": "name, post, year_text = input().strip(), input().strip(), input()",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 30,
+      "source": "try:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 31,
+      "source": "year = int(year_text)",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 32,
+      "source": "if not name or not post or not 1 <= year <= reference_year:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 37,
+      "source": "workers.append({'name': name, 'post': post, 'year': year})",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 38,
+      "source": "workers.sort(key=lambda item: item['name'].casefold())",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 38,
+      "source": "workers.sort(key=lambda item: item['name'].casefold())",
+      "state": {
+        "item": {
+          "name": "Андреева А.А.",
+          "post": "техник",
+          "year": 2015
+        }
+      }
+    },
+    {
+      "line": 38,
+      "source": "workers.sort(key=lambda item: item['name'].casefold())",
+      "state": {
+        "item": {
+          "name": "Белов Б.Б.",
+          "post": "инженер",
+          "year": 2016
+        }
+      }
+    },
+    {
+      "line": 38,
+      "source": "workers.sort(key=lambda item: item['name'].casefold())",
+      "state": {
+        "item": {
+          "name": "Волков В.В.",
+          "post": "лаборант",
+          "year": 2026
+        }
+      }
+    },
+    {
+      "line": 39,
+      "source": "print('Добавлено')",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 19,
+      "source": "while True:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 20,
+      "source": "line = input().strip()",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 21,
+      "source": "if not line:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 23,
+      "source": "parts = line.split(maxsplit=1)",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 24,
+      "source": "command = parts[0].casefold()",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "command": "add"
+      }
+    },
+    {
+      "line": 25,
+      "source": "argument = parts[1] if len(parts) == 2 else ''",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "command": "select"
+      }
+    },
+    {
+      "line": 26,
+      "source": "if command == 'exit' and not argument:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "command": "select"
+      }
+    },
+    {
+      "line": 28,
+      "source": "if command == 'add' and not argument:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "command": "select"
+      }
+    },
+    {
+      "line": 40,
+      "source": "elif command == 'list' and not argument:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "command": "select"
+      }
+    },
+    {
+      "line": 42,
+      "source": "elif command == 'select':",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "command": "select"
+      }
+    },
+    {
+      "line": 43,
+      "source": "try:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "command": "select"
+      }
+    },
+    {
+      "line": 44,
+      "source": "experience = int(argument)",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "command": "select"
+      }
+    },
+    {
+      "line": 45,
+      "source": "if experience < 0:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "experience": 10,
+        "command": "select"
+      }
+    },
+    {
+      "line": 50,
+      "source": "selected = [item for item in workers",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "experience": 10,
+        "command": "select"
+      }
+    },
+    {
+      "line": 51,
+      "source": "if reference_year - item['year'] > experience]",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "experience": 10,
+        "item": {
+          "name": "Андреева А.А.",
+          "post": "техник",
+          "year": 2015
+        },
+        "command": "select"
+      }
+    },
+    {
+      "line": 50,
+      "source": "selected = [item for item in workers",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "experience": 10,
+        "item": {
+          "name": "Андреева А.А.",
+          "post": "техник",
+          "year": 2015
+        },
+        "command": "select"
+      }
+    },
+    {
+      "line": 50,
+      "source": "selected = [item for item in workers",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "experience": 10,
+        "item": {
+          "name": "Андреева А.А.",
+          "post": "техник",
+          "year": 2015
+        },
+        "command": "select"
+      }
+    },
+    {
+      "line": 51,
+      "source": "if reference_year - item['year'] > experience]",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "experience": 10,
+        "item": {
+          "name": "Белов Б.Б.",
+          "post": "инженер",
+          "year": 2016
+        },
+        "command": "select"
+      }
+    },
+    {
+      "line": 50,
+      "source": "selected = [item for item in workers",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "experience": 10,
+        "item": {
+          "name": "Белов Б.Б.",
+          "post": "инженер",
+          "year": 2016
+        },
+        "command": "select"
+      }
+    },
+    {
+      "line": 50,
+      "source": "selected = [item for item in workers",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "experience": 10,
+        "item": {
+          "name": "Белов Б.Б.",
+          "post": "инженер",
+          "year": 2016
+        },
+        "command": "select"
+      }
+    },
+    {
+      "line": 51,
+      "source": "if reference_year - item['year'] > experience]",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "experience": 10,
+        "item": {
+          "name": "Волков В.В.",
+          "post": "лаборант",
+          "year": 2026
+        },
+        "command": "select"
+      }
+    },
+    {
+      "line": 50,
+      "source": "selected = [item for item in workers",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "experience": 10,
+        "item": {
+          "name": "Волков В.В.",
+          "post": "лаборант",
+          "year": 2026
+        },
+        "command": "select"
+      }
+    },
+    {
+      "line": 50,
+      "source": "selected = [item for item in workers",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "experience": 10,
+        "item": {
+          "name": "Волков В.В.",
+          "post": "лаборант",
+          "year": 2026
+        },
+        "command": "select"
+      }
+    },
+    {
+      "line": 52,
+      "source": "show(selected)",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "experience": 10,
+        "selected": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          }
+        ],
+        "command": "select"
+      }
+    },
+    {
+      "line": 4,
+      "source": "if not records:",
+      "state": {}
+    },
+    {
+      "line": 6,
+      "source": "for i, item in enumerate(records, start=1):",
+      "state": {}
+    },
+    {
+      "line": 7,
+      "source": "print(f\"{i}. {item['name']} | {item['post']} | {item['year']}\")",
+      "state": {
+        "item": {
+          "name": "Андреева А.А.",
+          "post": "техник",
+          "year": 2015
+        }
+      }
+    },
+    {
+      "line": 6,
+      "source": "for i, item in enumerate(records, start=1):",
+      "state": {
+        "item": {
+          "name": "Андреева А.А.",
+          "post": "техник",
+          "year": 2015
+        }
+      }
+    },
+    {
+      "line": 19,
+      "source": "while True:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "experience": 10,
+        "selected": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          }
+        ],
+        "command": "select"
+      }
+    },
+    {
+      "line": 20,
+      "source": "line = input().strip()",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "experience": 10,
+        "selected": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          }
+        ],
+        "command": "select"
+      }
+    },
+    {
+      "line": 21,
+      "source": "if not line:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "experience": 10,
+        "selected": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          }
+        ],
+        "command": "select"
+      }
+    },
+    {
+      "line": 23,
+      "source": "parts = line.split(maxsplit=1)",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "experience": 10,
+        "selected": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          }
+        ],
+        "command": "select"
+      }
+    },
+    {
+      "line": 24,
+      "source": "command = parts[0].casefold()",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "experience": 10,
+        "selected": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          }
+        ],
+        "command": "select"
+      }
+    },
+    {
+      "line": 25,
+      "source": "argument = parts[1] if len(parts) == 2 else ''",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "experience": 10,
+        "selected": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          }
+        ],
+        "command": "exit"
+      }
+    },
+    {
+      "line": 26,
+      "source": "if command == 'exit' and not argument:",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "experience": 10,
+        "selected": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          }
+        ],
+        "command": "exit"
+      }
+    },
+    {
+      "line": 27,
+      "source": "break",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "experience": 10,
+        "selected": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          }
+        ],
+        "command": "exit"
+      }
+    },
+    {
+      "line": 57,
+      "source": "return 0",
+      "state": {
+        "reference_year": 2026,
+        "workers": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          },
+          {
+            "name": "Белов Б.Б.",
+            "post": "инженер",
+            "year": 2016
+          },
+          {
+            "name": "Волков В.В.",
+            "post": "лаборант",
+            "year": 2026
+          }
+        ],
+        "experience": 10,
+        "selected": [
+          {
+            "name": "Андреева А.А.",
+            "post": "техник",
+            "year": 2015
+          }
+        ],
+        "command": "exit"
+      }
+    }
+  ]
+}

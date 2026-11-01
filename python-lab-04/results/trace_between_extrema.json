@@ -1,0 +1,407 @@
+{
+  "file": "between_extrema.py",
+  "input": "5 1 2 5",
+  "output": "Индекс минимума: 1\nИндекс максимума: 0\nПоложительных между: 0\n",
+  "events": [
+    {
+      "line": 1,
+      "source": "import sys",
+      "state": {}
+    },
+    {
+      "line": 3,
+      "source": "def main():",
+      "state": {}
+    },
+    {
+      "line": 24,
+      "source": "if __name__ == '__main__':",
+      "state": {}
+    },
+    {
+      "line": 25,
+      "source": "sys.exit(main())",
+      "state": {}
+    },
+    {
+      "line": 4,
+      "source": "numbers = list(map(int, input().split()))",
+      "state": {}
+    },
+    {
+      "line": 5,
+      "source": "if not numbers:",
+      "state": {
+        "numbers": [
+          5,
+          1,
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "line": 8,
+      "source": "minimum = maximum = 0",
+      "state": {
+        "numbers": [
+          5,
+          1,
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "line": 9,
+      "source": "for i, number in enumerate(numbers):",
+      "state": {
+        "numbers": [
+          5,
+          1,
+          2,
+          5
+        ],
+        "minimum": 0,
+        "maximum": 0
+      }
+    },
+    {
+      "line": 10,
+      "source": "if number < numbers[minimum]:",
+      "state": {
+        "numbers": [
+          5,
+          1,
+          2,
+          5
+        ],
+        "i": 0,
+        "number": 5,
+        "minimum": 0,
+        "maximum": 0
+      }
+    },
+    {
+      "line": 12,
+      "source": "if number > numbers[maximum]:",
+      "state": {
+        "numbers": [
+          5,
+          1,
+          2,
+          5
+        ],
+        "i": 0,
+        "number": 5,
+        "minimum": 0,
+        "maximum": 0
+      }
+    },
+    {
+      "line": 9,
+      "source": "for i, number in enumerate(numbers):",
+      "state": {
+        "numbers": [
+          5,
+          1,
+          2,
+          5
+        ],
+        "i": 0,
+        "number": 5,
+        "minimum": 0,
+        "maximum": 0
+      }
+    },
+    {
+      "line": 10,
+      "source": "if number < numbers[minimum]:",
+      "state": {
+        "numbers": [
+          5,
+          1,
+          2,
+          5
+        ],
+        "i": 1,
+        "number": 1,
+        "minimum": 0,
+        "maximum": 0
+      }
+    },
+    {
+      "line": 11,
+      "source": "minimum = i",
+      "state": {
+        "numbers": [
+          5,
+          1,
+          2,
+          5
+        ],
+        "i": 1,
+        "number": 1,
+        "minimum": 0,
+        "maximum": 0
+      }
+    },
+    {
+      "line": 12,
+      "source": "if number > numbers[maximum]:",
+      "state": {
+        "numbers": [
+          5,
+          1,
+          2,
+          5
+        ],
+        "i": 1,
+        "number": 1,
+        "minimum": 1,
+        "maximum": 0
+      }
+    },
+    {
+      "line": 9,
+      "source": "for i, number in enumerate(numbers):",
+      "state": {
+        "numbers": [
+          5,
+          1,
+          2,
+          5
+        ],
+        "i": 1,
+        "number": 1,
+        "minimum": 1,
+        "maximum": 0
+      }
+    },
+    {
+      "line": 10,
+      "source": "if number < numbers[minimum]:",
+      "state": {
+        "numbers": [
+          5,
+          1,
+          2,
+          5
+        ],
+        "i": 2,
+        "number": 2,
+        "minimum": 1,
+        "maximum": 0
+      }
+    },
+    {
+      "line": 12,
+      "source": "if number > numbers[maximum]:",
+      "state": {
+        "numbers": [
+          5,
+          1,
+          2,
+          5
+        ],
+        "i": 2,
+        "number": 2,
+        "minimum": 1,
+        "maximum": 0
+      }
+    },
+    {
+      "line": 9,
+      "source": "for i, number in enumerate(numbers):",
+      "state": {
+        "numbers": [
+          5,
+          1,
+          2,
+          5
+        ],
+        "i": 2,
+        "number": 2,
+        "minimum": 1,
+        "maximum": 0
+      }
+    },
+    {
+      "line": 10,
+      "source": "if number < numbers[minimum]:",
+      "state": {
+        "numbers": [
+          5,
+          1,
+          2,
+          5
+        ],
+        "i": 3,
+        "number": 5,
+        "minimum": 1,
+        "maximum": 0
+      }
+    },
+    {
+      "line": 12,
+      "source": "if number > numbers[maximum]:",
+      "state": {
+        "numbers": [
+          5,
+          1,
+          2,
+          5
+        ],
+        "i": 3,
+        "number": 5,
+        "minimum": 1,
+        "maximum": 0
+      }
+    },
+    {
+      "line": 9,
+      "source": "for i, number in enumerate(numbers):",
+      "state": {
+        "numbers": [
+          5,
+          1,
+          2,
+          5
+        ],
+        "i": 3,
+        "number": 5,
+        "minimum": 1,
+        "maximum": 0
+      }
+    },
+    {
+      "line": 14,
+      "source": "left, right = sorted((minimum, maximum))",
+      "state": {
+        "numbers": [
+          5,
+          1,
+          2,
+          5
+        ],
+        "i": 3,
+        "number": 5,
+        "minimum": 1,
+        "maximum": 0
+      }
+    },
+    {
+      "line": 15,
+      "source": "count = 0",
+      "state": {
+        "numbers": [
+          5,
+          1,
+          2,
+          5
+        ],
+        "i": 3,
+        "number": 5,
+        "minimum": 1,
+        "maximum": 0,
+        "left": 0,
+        "right": 1
+      }
+    },
+    {
+      "line": 16,
+      "source": "for i in range(left + 1, right):",
+      "state": {
+        "numbers": [
+          5,
+          1,
+          2,
+          5
+        ],
+        "i": 3,
+        "number": 5,
+        "minimum": 1,
+        "maximum": 0,
+        "count": 0,
+        "left": 0,
+        "right": 1
+      }
+    },
+    {
+      "line": 19,
+      "source": "print(f'Индекс минимума: {minimum}')",
+      "state": {
+        "numbers": [
+          5,
+          1,
+          2,
+          5
+        ],
+        "i": 3,
+        "number": 5,
+        "minimum": 1,
+        "maximum": 0,
+        "count": 0,
+        "left": 0,
+        "right": 1
+      }
+    },
+    {
+      "line": 20,
+      "source": "print(f'Индекс максимума: {maximum}')",
+      "state": {
+        "numbers": [
+          5,
+          1,
+          2,
+          5
+        ],
+        "i": 3,
+        "number": 5,
+        "minimum": 1,
+        "maximum": 0,
+        "count": 0,
+        "left": 0,
+        "right": 1
+      }
+    },
+    {
+      "line": 21,
+      "source": "print(f'Положительных между: {count}')",
+      "state": {
+        "numbers": [
+          5,
+          1,
+          2,
+          5
+        ],
+        "i": 3,
+        "number": 5,
+        "minimum": 1,
+        "maximum": 0,
+        "count": 0,
+        "left": 0,
+        "right": 1
+      }
+    },
+    {
+      "line": 22,
+      "source": "return 0",
+      "state": {
+        "numbers": [
+          5,
+          1,
+          2,
+          5
+        ],
+        "i": 3,
+        "number": 5,
+        "minimum": 1,
+        "maximum": 0,
+        "count": 0,
+        "left": 0,
+        "right": 1
+      }
+    }
+  ]
+}

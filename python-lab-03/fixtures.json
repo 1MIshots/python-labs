@@ -1,0 +1,308 @@
+[
+  {
+    "file": "replace_spaces.py",
+    "input": "мама мыла раму\n",
+    "expected": "'мама_мыла_раму'\n",
+    "label": "'мама мыла раму'",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "replace_spaces.py",
+    "input": " а  б \n",
+    "expected": "'_а__б_'\n",
+    "label": "' а  б '",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "replace_spaces.py",
+    "input": "\n",
+    "expected": "''\n",
+    "label": "''",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "replace_spaces.py",
+    "input": "а\tб\n",
+    "expected": "'а\\tб'\n",
+    "label": "'а\\tб'",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "remove_middle.py",
+    "input": "кот\n",
+    "expected": "'кт'\n",
+    "label": "кот",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "remove_middle.py",
+    "input": "мама\n",
+    "expected": "'ма'\n",
+    "label": "мама",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "remove_middle.py",
+    "input": "я\n",
+    "expected": "''\n",
+    "label": "я",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "remove_middle.py",
+    "input": "мы\n",
+    "expected": "''\n",
+    "label": "мы",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "remove_middle.py",
+    "input": "\n",
+    "expected": "Ошибка: пустое слово\n",
+    "label": "Пустая строка",
+    "error": true,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "justify_text.py",
+    "input": "мама мыла раму\n17\n",
+    "expected": "'мама   мыла  раму'\nДлина: 17\n",
+    "label": "'мама мыла раму'; L=17",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "justify_text.py",
+    "input": "а   б в\n7\n",
+    "expected": "'а  б  в'\nДлина: 7\n",
+    "label": "'а   б в'; L=7",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "justify_text.py",
+    "input": "два слова\n9\n",
+    "expected": "'два слова'\nДлина: 9\n",
+    "label": "'два слова'; L=9",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "justify_text.py",
+    "input": "два слова\n6\n",
+    "expected": "Ошибка: слова или длина\n",
+    "label": "'два слова'; L=6",
+    "error": true,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "justify_text.py",
+    "input": "слово\n8\n",
+    "expected": "Ошибка: слова или длина\n",
+    "label": "'слово'; L=8",
+    "error": true,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "justify_text.py",
+    "input": " два слова\n10\n",
+    "expected": "Ошибка: формат строки\n",
+    "label": "' два слова'; L=10",
+    "error": true,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "justify_text.py",
+    "input": "   \n12\n",
+    "expected": "Ошибка: формат строки\n",
+    "label": "'   '; L=12",
+    "error": true,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "justify_text.py",
+    "input": "а\tб\n10\n",
+    "expected": "Ошибка: формат строки\n",
+    "label": "'а\\tб'; L=10",
+    "error": true,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "individual_01.py",
+    "input": "\n",
+    "expected": "Не найдено\n",
+    "label": "''",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "individual_01.py",
+    "input": "мир\n",
+    "expected": "2\n",
+    "label": "'мир'",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "individual_01.py",
+    "input": "ииии\n",
+    "expected": "2\n4\n",
+    "label": "'ииии'",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "individual_01.py",
+    "input": "Ииiи\n",
+    "expected": "2\n4\n",
+    "label": "'Ииiи'",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "individual_01.py",
+    "input": "иabc\n",
+    "expected": "Не найдено\n",
+    "label": "'иabc'",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "individual_01.py",
+    "input": "аиии\n",
+    "expected": "2\n4\n",
+    "label": "'аиии'",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "individual_02.py",
+    "input": "нк\n",
+    "expected": "Раньше н\n",
+    "label": "нк",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "individual_02.py",
+    "input": "кн\n",
+    "expected": "Раньше к\n",
+    "label": "кн",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "individual_02.py",
+    "input": "аник\n",
+    "expected": "Раньше н\n",
+    "label": "аник",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "individual_02.py",
+    "input": "ккнн\n",
+    "expected": "Раньше к\n",
+    "label": "ккнн",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "individual_02.py",
+    "input": "НКнк\n",
+    "expected": "Раньше н\n",
+    "label": "НКнк",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "individual_03.py",
+    "input": "я\n",
+    "expected": "'я'\n",
+    "label": "я",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "individual_03.py",
+    "input": "мы\n",
+    "expected": "'ым'\n",
+    "label": "мы",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "individual_03.py",
+    "input": "питон\n",
+    "expected": "'итонп'\n",
+    "label": "питон",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "individual_03.py",
+    "input": "Python\n",
+    "expected": "'ythonP'\n",
+    "label": "Python",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "individual_03.py",
+    "input": "ааа\n",
+    "expected": "'ааа'\n",
+    "label": "ааа",
+    "error": false,
+    "contains": false,
+    "summary": null
+  },
+  {
+    "file": "justify_text.py",
+    "input": "а б в\n6\n",
+    "expected": "'а  б в'\nДлина: 6\n",
+    "label": "а б в; 6",
+    "error": false,
+    "contains": false,
+    "summary": null
+  }
+]

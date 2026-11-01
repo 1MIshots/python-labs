@@ -1,0 +1,118 @@
+{
+  "vscode": "1.144.0",
+  "debuggerVersion": "2026.6.0",
+  "method": "VS Code Extension Host API and Python Debugger, DAP breakpoints and next",
+  "passed": true,
+  "sessions": [
+    {
+      "lab": 3,
+      "file": "justify_text.py",
+      "marker": "parts.append(' ' *",
+      "condition": "i == 0",
+      "input": "мама мыла раму\n17\n",
+      "expressions": [
+        "i",
+        "base",
+        "extra",
+        "parts"
+      ],
+      "before": {
+        "base": "2",
+        "extra": "1",
+        "parts": "['мама']"
+      },
+      "after": {
+        "parts": "['мама', '   ']"
+      },
+      "outputContains": [
+        "Длина: 17"
+      ],
+      "stops": [
+        {
+          "label": "before",
+          "reason": "breakpoint",
+          "frame": {
+            "id": 2,
+            "name": "main",
+            "line": 23,
+            "column": 1,
+            "source": {
+              "path": "justify_text.py",
+              "sourceReference": 0
+            }
+          },
+          "variables": {
+            "base": "2",
+            "extra": "1",
+            "gap_count": "2",
+            "i": "0",
+            "length": "17",
+            "letters": "12",
+            "parts": "['мама']",
+            "text": "'мама мыла раму'",
+            "word": "'мама'",
+            "words": "['мама', 'мыла', 'раму']",
+            "special variables": "",
+            "function variables": "",
+            "sys": "<module 'sys' (built-in)>"
+          },
+          "values": {
+            "i": "0",
+            "base": "2",
+            "extra": "1",
+            "parts": "['мама']"
+          }
+        },
+        {
+          "label": "after next",
+          "reason": "step",
+          "frame": {
+            "id": 2,
+            "name": "main",
+            "line": 20,
+            "column": 1,
+            "source": {
+              "path": "justify_text.py",
+              "sourceReference": 0
+            }
+          },
+          "variables": {
+            "base": "2",
+            "extra": "1",
+            "gap_count": "2",
+            "i": "0",
+            "length": "17",
+            "letters": "12",
+            "parts": "['мама', '   ']",
+            "text": "'мама мыла раму'",
+            "word": "'мама'",
+            "words": "['мама', 'мыла', 'раму']",
+            "special variables": "",
+            "function variables": "",
+            "sys": "<module 'sys' (built-in)>"
+          },
+          "values": {
+            "i": "0",
+            "base": "2",
+            "extra": "1",
+            "parts": "['мама', '   ']"
+          }
+        }
+      ],
+      "output": "ptvsddebugpyPython: 3.14.6\nInterpreter: c:\\Users\\mansu\\Documents\\Codex\\2026-11-01\\https-disk-yandex-ru-d-yt9rq8lg9aq-3\\outputs\\Python_ЛР1-5_Вариант_13\\python-lab-01\\.venv\\Scripts\\python.exe\n'мама   мыла  раму'\nДлина: 17\n",
+      "passed": true
+    },
+    {
+      "lab": 3,
+      "file": "verify.py",
+      "input": "",
+      "noBreakpoint": true,
+      "outputContains": [
+        "34/34"
+      ],
+      "stops": [],
+      "output": "ptvsddebugpyPython: 3.14.6\nInterpreter: c:\\Users\\mansu\\Documents\\Codex\\2026-11-01\\https-disk-yandex-ru-d-yt9rq8lg9aq-3\\outputs\\Python_ЛР1-5_Вариант_13\\python-lab-01\\.venv\\Scripts\\python.exe\nPython 3.14.6; 34/34\n",
+      "passed": true
+    }
+  ]
+}
